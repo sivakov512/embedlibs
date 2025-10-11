@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.16)
 
 set(LIBNAME embedlibs)
-set(TESTLIBNAME embedlibs_tests)
 
-project(${TESTLIBNAME} C)
+project(embedlibs_tests C)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
@@ -28,8 +27,17 @@ enable_testing()
 add_subdirectory(
     ${CMAKE_CURRENT_LIST_DIR}/../../ ${CMAKE_BINARY_DIR}/${LIBNAME})
 
-add_unity_test(${TESTLIBNAME}
+add_unity_test(hash_tests
+    SRCS hash/test_hash32.c
+    LIBS ${LIBNAME}
+)
+
+add_unity_test(ringbuf_tests
+    HEADERS ringbuf/ringbuf_tests.h
     SRCS
-        test_hash.c
+        ringbuf/main.c
+        ringbuf/test_ringbuf_basic.c
+        ringbuf/test_ringbuf_commit.c
+        ringbuf/test_ringbuf_iterator.c
     LIBS ${LIBNAME}
 )

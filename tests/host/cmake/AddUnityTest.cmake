@@ -1,7 +1,7 @@
 function(add_unity_test NAME)
-    cmake_parse_arguments(TEST "" "" "SRCS;LIBS" ${ARGN})
+    cmake_parse_arguments(TEST "" "" "SRCS;LIBS;HEADERS" ${ARGN})
 
-    add_executable(${NAME} ${TEST_SRCS})
+    add_executable(${NAME} ${TEST_SRCS} ${TEST_HEADERS})
     target_link_libraries(${NAME} PRIVATE unity ${TEST_LIBS})
 
     set_target_properties(${NAME} PROPERTIES
