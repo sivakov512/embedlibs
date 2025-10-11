@@ -9,12 +9,14 @@ Small C libraries I use everywhere in embedded projects.
 
 Add to your ESP-IDF project `idf_component.yml`:
 
+<!--x-release-please-start-version-->
 ```yaml
 dependencies:
   embedlibs:
     git: https://github.com/sivakov512/embedlibs.git
-    version: "v1.0.0" # x-release-please-version
+    version: "v1.0.0"
 ```
+<!--x-release-please-end-->
 
 ## Development
 
