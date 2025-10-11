@@ -8,6 +8,8 @@ if(COMMAND idf_component_register)
     idf_component_register(
         SRCS ${SRCS}
         INCLUDE_DIRS ${PUBLIC_HEADERS} ${ESP_PUBLIC_HEADERS}
+        REQUIRES
+            log
     )
 else()
     project(embedlibs C)
