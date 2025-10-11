@@ -13,7 +13,7 @@ Add to your ESP-IDF project `idf_component.yml`:
 dependencies:
   embedlibs:
     git: https://github.com/sivakov512/embedlibs.git
-    version: "^v1.0.0"
+    version: "v1.0.0" # x-release-please-version
 ```
 
 ## Development
@@ -28,7 +28,3 @@ make host-tests
 # Run static analysis
 make host-lint
 ```
-
-## License
-
-MIT

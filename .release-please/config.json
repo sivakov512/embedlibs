@@ -5,7 +5,12 @@
       "package-name": "embedlibs",
       "changelog-path": "CHANGELOG.md",
       "extra-files": [
-        { "type": "yaml", "path": "idf_component.yml", "jsonpath": "$.version" }
+        {
+          "type": "yaml",
+          "path": "idf_component.yml",
+          "jsonpath": "$.version"
+        },
+        { "type": "generic", "path": "README.md" }
       ]
     }
   },
