@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-cmake-
 
       - name: Run tests
-        run: make host-tests
+        run: make host-test
 
   lint:
     runs-on: ubuntu-latest

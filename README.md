@@ -25,7 +25,7 @@ dependencies:
 make check-format
 
 # Run host tests
-make host-tests
+make host-test
 
 # Run static analysis
 make host-lint
