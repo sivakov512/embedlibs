@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 env:
-  LLVM_VERSION: "17"
+  LLVM_VERSION: "19"
 
 jobs:
   test:
