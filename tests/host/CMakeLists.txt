@@ -41,3 +41,9 @@ add_unity_test(ringbuf_tests
         ringbuf/test_ringbuf_iterator.c
     LIBS ${LIBNAME}
 )
+
+add_unity_test(sugar_tests
+    SRCS
+        sugar/test_memfind.c
+    LIBS ${LIBNAME}
+)
