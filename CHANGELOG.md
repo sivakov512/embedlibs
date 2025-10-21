@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/sivakov512/embedlibs/compare/v1.0.0...v1.1.0) (2025-10-21)
+
+
+### Features
+
+* memfind function for subarray search ([a30b156](https://github.com/sivakov512/embedlibs/commit/a30b1569891f2a7a103d66d3bb66ed5dd69305d8))
+
 ## 1.0.0 (2025-10-12)
 
 
