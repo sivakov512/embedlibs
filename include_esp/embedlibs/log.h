@@ -1,6 +1,6 @@
 #pragma once
 
-#include "sugar.h"
+#include "embedlibs/sugar.h"
 #include <esp_log.h>
 
 EXTERN_C_BEGIN
