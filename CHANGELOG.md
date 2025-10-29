@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/sivakov512/embedlibs/compare/v1.1.0...v1.2.0) (2025-10-29)
+
+
+### Features
+
+* macro to return on error with detailed logging ([7e0d8cf](https://github.com/sivakov512/embedlibs/commit/7e0d8cf216e82509aca79026bd91316acc7237e2))
+
 ## [1.1.0](https://github.com/sivakov512/embedlibs/compare/v1.0.0...v1.1.0) (2025-10-21)
 
 
