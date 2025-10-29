@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/sivakov512/embedlibs/compare/v1.2.0...v1.2.1) (2025-10-29)
+
+
+### Bug Fixes
+
+* Fix header include ([872ce98](https://github.com/sivakov512/embedlibs/commit/872ce98d67d567ee8d61f780fea64b168d8e596e))
+
 ## [1.2.0](https://github.com/sivakov512/embedlibs/compare/v1.1.0...v1.2.0) (2025-10-29)
 
 
