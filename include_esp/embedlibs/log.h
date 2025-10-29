@@ -1,10 +1,9 @@
 #pragma once
 
+#include "sugar.h"
 #include <esp_log.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+EXTERN_C_BEGIN
 
 // Direct aliases to ESP-IDF macros for compatibility
 #define LOG_E(tag, format, ...) ESP_LOGE(tag, format, ##__VA_ARGS__)
@@ -20,6 +19,14 @@ extern "C" {
 #define LOGD(format, ...) ESP_LOGD(TAG, format, ##__VA_ARGS__)
 #define LOGV(format, ...) ESP_LOGV(TAG, format, ##__VA_ARGS__)
 
-#ifdef __cplusplus
-}
-#endif
+// Logging helpers
+#define RETURN_ON_ERROR(expr, fmt, ...)                                                            \
+  do {                                                                                             \
+    esp_err_t err = (expr);                                                                        \
+    if (err != ESP_OK) {                                                                           \
+      LOGE(fmt " Err: %s", ##__VA_ARGS__, esp_err_to_name(err));                                   \
+      return err;                                                                                  \
+    }                                                                                              \
+  } while (0)
+
+EXTERN_C_END
