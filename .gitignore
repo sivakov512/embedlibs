@@ -3,6 +3,7 @@
 
 # User specific
 .envrc
+compile_commands.json
 
 # esp-idf
 .cache
