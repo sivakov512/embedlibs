@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(PUBLIC_HEADERS ${CMAKE_CURRENT_LIST_DIR}/include)
-set(ESP_PUBLIC_HEADERS ${CMAKE_CURRENT_LIST_DIR}/include_esp)
+set(PUBLIC_HEADERS include)
 set(SRCS
     src/ringbuf.c
     src/sugar.c
@@ -10,7 +9,7 @@ set(SRCS
 if(COMMAND idf_component_register)
     idf_component_register(
         SRCS ${SRCS}
-        INCLUDE_DIRS ${PUBLIC_HEADERS} ${ESP_PUBLIC_HEADERS}
+        INCLUDE_DIRS ${PUBLIC_HEADERS}
         REQUIRES
             log
     )
