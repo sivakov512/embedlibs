@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/sivakov512/embedlibs/compare/v1.2.1...v2.0.0) (2025-11-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop esp logger, make library completely clean
+
+### Features
+
+* drop esp logger, make library completely clean ([b813d03](https://github.com/sivakov512/embedlibs/commit/b813d0373d2610f601ed42e7ba4901b557bf30fe))
+
 ## [1.2.1](https://github.com/sivakov512/embedlibs/compare/v1.2.0...v1.2.1) (2025-10-29)
 
 
