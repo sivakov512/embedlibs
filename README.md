@@ -14,7 +14,7 @@ Add to your ESP-IDF project `idf_component.yml`:
 dependencies:
   embedlibs:
     git: https://github.com/sivakov512/embedlibs.git
-    version: "v2.0.0"
+    version: "v2.1.0"
 ```
 <!--x-release-please-end-->
 
