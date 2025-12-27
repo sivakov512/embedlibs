@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/sivakov512/embedlibs/compare/v2.0.0...v2.1.0) (2025-12-27)
+
+
+### Features
+
+* Add ARRAY_SIZE macro to sugar.h ([c24aae9](https://github.com/sivakov512/embedlibs/commit/c24aae98f51d996050ee4e9a832617b6abadb2b3))
+
 ## [2.0.0](https://github.com/sivakov512/embedlibs/compare/v1.2.1...v2.0.0) (2025-11-27)
 
 
