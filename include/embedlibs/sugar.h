@@ -23,6 +23,10 @@ EXTERN_C_BEGIN
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 #endif /* MAX */
 
+#ifndef ARRAY_SIZE
+#define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
+#endif /* ARRAY_SIZE */
+
 /**
  * @brief Find a subarray within a larger array of bytes
  *
